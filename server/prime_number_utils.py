@@ -1,6 +1,6 @@
-class PrimeNumberUtils:
-    prime_cache = {}
+# server/prime_number_utils.py
 
+class PrimeNumberUtils:
     @staticmethod
     def is_prime(n: int) -> bool:
         if n <= 1:
@@ -51,4 +51,3 @@ class PrimeNumberUtils:
     @staticmethod
     def primes_between(start: int, end: int) -> list:
         return [num for num in range(start, end + 1) if PrimeNumberUtils.is_prime(num)]
-
