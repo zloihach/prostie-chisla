@@ -1,5 +1,3 @@
-# server/prime_number_utils.py
-
 class PrimeNumberUtils:
     @staticmethod
     def is_prime(n: int) -> bool:

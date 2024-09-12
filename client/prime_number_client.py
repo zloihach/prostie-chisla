@@ -1,6 +1,7 @@
-import tkinter as tk
 from tkinter import simpledialog, messagebox
 import xmlrpc.client
+
+import tk
 
 # Подключаемся к серверу XML-RPC
 server = xmlrpc.client.ServerProxy("http://localhost:8000")

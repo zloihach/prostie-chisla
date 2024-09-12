@@ -13,11 +13,9 @@ if __name__ == "__main__":
     print("Запуск сервера...")
     server_process = start_server()
 
-    # Небольшая пауза, чтобы сервер успел запуститься
     time.sleep(2)
 
     print("Запуск клиента...")
     start_client()
 
-    # Завершение сервера после закрытия клиента
     server_process.terminate()
